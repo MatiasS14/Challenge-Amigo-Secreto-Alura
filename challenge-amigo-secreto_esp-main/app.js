@@ -1,6 +1,4 @@
 let listaAmigos = [];
-let amigoSeleccionado = "";
-
 
 function agregarAmigo(){
     let amigoIngresado = document.getElementById('amigo').value;
@@ -21,15 +19,34 @@ function validarAmigo(amigo){
 }
 
 function actualizarLista(){
-    let listaHTML = document.getElementById('listaAmigos'); 
-    listaHTML.innerHTML='';
+    let listaHTML = elementoReiniciado('listaAmigos');
     listaAmigos.forEach(amigo => {
-        //crea un nodo li para agregar en html
-        var node = document.createElement('li');
-        //le agrego el string al nodo
-        node.appendChild(document.createTextNode(amigo));
-        //agrego el nodo li al la lista ul en el html
-        listaHTML.appendChild(node);
+         listaHTML.appendChild(crearLi(amigo));
     });
 
+}
+
+function sortearAmigo(){
+    if(listaAmigos.length > 0){
+        let resultado = elementoReiniciado('resultado');
+        resultado.appendChild(crearLi(listaAmigos[indiceAmigo()]));
+    }else{
+        alert("Debe ingresar al menos un amigo!");
+    }
+}
+
+function indiceAmigo(){
+    return Math.floor(Math.random()*listaAmigos.length);
+}
+
+function elementoReiniciado(idElemento){
+    let element = document.getElementById(idElemento);
+    element.innerHTML = '';
+    return element;
+}
+
+function crearLi(elemento){
+    let node = document.createElement('li');
+    node.appendChild(document.createTextNode(elemento));
+    return node;
 }
