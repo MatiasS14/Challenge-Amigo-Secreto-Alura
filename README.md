@@ -10,10 +10,13 @@
 <p>Solo necesitas acceso a internet y entrar desde el navegador web</p> <a href="https://matiass14.github.io/Challenge-Amigo-Secreto-Alura"><img src="https://img.shields.io/badge/Donde-Jugar-green"></a>
 
 <h2>Como Jugar</h2>
-Para ingresar un nuevo amigo
-<img src="/assets/imagenes_demo/imagen-ingresar-nombre.png">
-<img src="/assets/imagenes_demo/boton-agregar.png">
-<img src="/assets/imagenes_demo/lista-amigos.png">
-Para sortear amigo
-<img src="/assets/imagenes_demo/boton-sortear.png">
-<img src="/assets/imagenes_demo/resultado.png">
+<h3>Para ingresar un nuevo amigo</h3>
+<img src="/assets/imagenes_demo/imagen-ingresar-nombre.png" style="width:500px;height:350px;">
+<h3>Pulsamos en el boton añadir</h3>
+<img src="/assets/imagenes_demo/boton-agregar.png" style="width:500px;height:350px;">
+<h3>Una vez agregado, se muestra en la lista de amigos</h3>
+<img src="/assets/imagenes_demo/lista-amigos.png" style="width:500px;height:350px;">
+<h3>Para sortear amigo</h3>
+<img src="/assets/imagenes_demo/boton-sortear.png" style="width:500px;height:350px;">
+<h3>Una vez sorteado, se muestra el resultado</h3>
+<img src="/assets/imagenes_demo/resultado.png" style="width:500px;height:350px;">
