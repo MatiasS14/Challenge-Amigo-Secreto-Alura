@@ -11,6 +11,9 @@
 
 <h2>Como Jugar</h2>
 Para ingresar un nuevo amigo
-
+<img src="/assets/imagenes_demo/imagen-ingresar-nombre.png">
+<img src="/assets/imagenes_demo/boton-agregar.png">
+<img src="/assets/imagenes_demo/lista-amigos.png">
 Para sortear amigo
-
+<img src="/assets/imagenes_demo/boton-sortear.png">
+<img src="/assets/imagenes_demo/resultado.png">
