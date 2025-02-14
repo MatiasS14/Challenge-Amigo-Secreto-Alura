@@ -8,14 +8,15 @@ function agregarAmigo(){
         document.getElementById('amigo').value = '';
         actualizarLista();
     }else{
-        alert('Debe ingresar un nombre valido');
+        alert('Nombre de amigo invalido o repetido');
     }
 }
 
 function validarAmigo(amigo){
     //la funcion trim elimina los espacio vacios
     //lo que evita que se agreguen strings vacios
-    return amigo.trim().length > 0;
+    //ademas verifica que no se repita el amigo
+    return amigo.trim().length > 0 && !listaAmigos.includes(amigo);
 }
 
 function actualizarLista(){
