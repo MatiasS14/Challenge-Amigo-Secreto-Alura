@@ -22,7 +22,7 @@ function validarAmigo(amigo){
 function actualizarLista(){
     let listaHTML = elementoReiniciado('listaAmigos');
     listaAmigos.forEach(amigo => {
-         listaHTML.appendChild(crearLi(amigo));
+         listaHTML.appendChild(crearElemento('li',amigo));
     });
 
 }
@@ -30,7 +30,7 @@ function actualizarLista(){
 function sortearAmigo(){
     if(listaAmigos.length > 0){
         let resultado = elementoReiniciado('resultado');
-        resultado.appendChild(crearLi(listaAmigos[indiceAmigo()]));
+        resultado.appendChild(crearElemento('h2',listaAmigos[indiceAmigo()]));
     }else{
         alert("Debe ingresar al menos un amigo!");
     }
@@ -46,8 +46,8 @@ function elementoReiniciado(idElemento){
     return element;
 }
 
-function crearLi(elemento){
-    let node = document.createElement('li');
+function crearElemento(tipoElemento, elemento){
+    let node = document.createElement(tipoElemento);
     node.appendChild(document.createTextNode(elemento));
     return node;
 }
